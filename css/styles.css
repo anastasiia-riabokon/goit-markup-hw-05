@@ -630,8 +630,12 @@ textarea {
   width: 100%;
 }
 
-.field:focus-within {
+.group-input-form:focus-within .field {
   border-color: var(--iris);
+}
+
+.group-input-form:focus-within .input-icon {
+  fill: var(--iris);
 }
 
 .field-comment {
