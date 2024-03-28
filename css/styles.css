@@ -8,13 +8,9 @@
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
-  /* --grey-shadow-one: rgba(46, 47, 66, 0.08);
-  --grey-shadow-two: rgba(46, 47, 66, 0.16); */
   --grey: rgba(46, 47, 66, 0.7);
-  /* --black-shadow: rgba(0, 0, 0, 0.15); */
   --white: #fff;
   --dairy: #fcfcfc;
-  /* --semi-transparent: rgba(0, 0, 0, 0.4); */
   --font-family: 'Roboto', sans-serif;
   --second-family: 'Raleway', sans-serif;
 }
@@ -563,6 +559,11 @@ section {
   pointer-events: none;
 }
 
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .modal {
   background-color: var(--dairy);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -675,6 +676,10 @@ section {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.field-comment::placeholder {
+  color: var(--navy-blue-modal);
 }
 
 .label-form:focus-within .field,
