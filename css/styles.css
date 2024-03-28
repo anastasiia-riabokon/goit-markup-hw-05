@@ -739,7 +739,6 @@ section {
 .input-checkbox:checked {
   background-color: var(--ocean);
   fill: var(--cloud);
-  border: none;
 }
 
 .svg-tick {
