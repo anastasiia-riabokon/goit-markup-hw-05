@@ -707,7 +707,7 @@ section {
 }
 
 .input-container:focus-within .field,
-.input-container:focus-within .field-comment {
+.field-comment:focus-within {
   border-color: var(--iris);
 }
 
