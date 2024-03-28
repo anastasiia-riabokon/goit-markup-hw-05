@@ -617,7 +617,7 @@
         <!-- #region Input Form Footer -->
         <div class="container-form-footer">
           <p class="title-footer">Subscribe</p>
-          <form class="form-footer" action="">
+          <form class="form-footer">
             <label for="input-email" class="label-form-footer">
               <input
                 class="entry-field-email-footer"
@@ -630,7 +630,7 @@
 
             <button class="footer-button" type="submit">
               Subscribe
-              <svg class="icon-plane" width="24" height="20">
+              <svg class="icon-plane" width="24" height="24">
                 <use href="./images/icons.svg#icon-plane"></use>
               </svg>
             </button>
@@ -645,111 +645,90 @@
     <!-- #region Modal Window -->
     <div class="modal-overlay">
       <div class="modal">
-        <form class="form-modal" action="">
-          <div class="eclipse">
-            <svg class="icon-modal" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </div>
+        <button class="eclipse" type="button">
+          <svg class="icon-modal" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
+        <p class="legend-modal">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="form-modal">
           <!-- #region Input Fields -->
-          <fieldset class="group-input-form">
-            <legend class="legend-modal">
-              Leave your contacts and we will call you back
-            </legend>
-
+          <div class="group-input-form">
             <!-- Input Username -->
-            <label class="label-form" for="username">
-              Name
-              <div class="input-container">
-                <svg class="input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
+            <label class="label-form" for="username"> Name </label>
 
-                <input
-                  class="field"
-                  type="text"
-                  name="username"
-                  id="username"
-                  autocomplete="username"
-                  autofocus
-                />
-              </div>
-            </label>
+            <div class="input-container">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+
+              <input
+                class="field"
+                type="text"
+                name="username"
+                id="username"
+                autofocus
+              />
+            </div>
 
             <!-- Input Mobile Phone -->
-            <label class="label-form" for="phone">
-              Phone
-              <div class="input-container">
-                <svg class="input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-tel"></use>
-                </svg>
-                <input
-                  class="field"
-                  type="tel"
-                  name="phoner"
-                  id="phone"
-                  autocomplete="phone"
-                />
-              </div>
-            </label>
+            <label class="label-form" for="phone"> Phone </label>
+
+            <div class="input-container">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              <input class="field" type="tel" name="phoner" id="phone" />
+            </div>
 
             <!-- Input Email Post -->
-            <label class="label-form" for="email">
-              Email
-              <div class="input-container">
-                <svg class="input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                <input
-                  class="field"
-                  type="email"
-                  name="email"
-                  id="email"
-                  autocomplete="email"
-                />
-              </div>
-            </label>
+            <label class="label-form" for="email"> Email </label>
+
+            <div class="input-container">
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              <input class="field" type="email" name="email" id="email" />
+            </div>
 
             <!-- Input Comment Text -->
-            <label class="label-form" for="comment">
-              Comment
+            <div class="input-comment">
+              <label class="label-form" for="user-comment"> Comment </label>
               <textarea
                 class="field-comment"
-                id="comment"
-                name="commentt"
-                rows="6"
+                id="user-comment"
+                name="user-comment"
                 placeholder="Text Input"
-                autocomplete="comment"
               ></textarea>
-            </label>
-          </fieldset>
-          <!-- #endregion Input Fields -->
-
-          <label class="checkbox" for="checkbox">
-            <input
-              class="visually-hidden"
-              type="checkbox"
-              name="checkbox"
-              id="checkbox"
-            />
-            <!-- <div class="checkbox"> -->
-            <div class="icon-agree">
-              <svg class="svg-rectangle" width="16" height="16">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-              <svg class="svg-tick" width="10" height="8">
-                <use href="./images/icons.svg#icon-tick"></use>
-              </svg>
             </div>
-            <p class="checkbox-text">
+          </div>
+
+          <div class="checkbox">
+            <input
+              class="visually-hidden input-checkbox"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="checkbox-text" for="user-privacy">
+              <span class="icon-agree">
+                <svg class="svg-tick" width="10" height="8">
+                  <use href="./images/icons.svg#icon-tick"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a href="http://" target="_blank" rel="noopener noreferrer"
                 >Privacy Policy</a
               >
-            </p>
-            <!-- </div> -->
-          </label>
+            </label>
+          </div>
+
+          <!-- #endregion Input Fields -->
 
           <button class="form-button" type="submit">Send</button>
         </form>
